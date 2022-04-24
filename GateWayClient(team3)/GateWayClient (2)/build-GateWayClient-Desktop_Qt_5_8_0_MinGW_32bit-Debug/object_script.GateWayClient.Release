@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mnetwork.o
+./release\mserialport.o
+./release\netprotocol.o
+./release\serialprotocol.o
+./release\raspiclient.o
+./release\dataqueue.o
+./release\moc_mnetwork.o
+./release\moc_mserialport.o
+./release\moc_netprotocol.o
+./release\moc_raspiclient.o
+);

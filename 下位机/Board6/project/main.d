@@ -1,0 +1,17 @@
+.\main.o: ..\user\main.c
+.\main.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\main.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\main.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\main.o: ..\user\stm32f10x_conf.h
+.\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\main.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\main.o: ..\user\protocol.h
+.\main.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\main.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\main.o: ..\hardware\inc\briupDelay.h
+.\main.o: ..\hardware\inc\briupUsart.h
+.\main.o: ..\hardware\inc\briupZigbee.h
+.\main.o: ..\hardware\inc\briupGPIO.h
+.\main.o: ..\devices\inc\basePeripheral.h
+.\main.o: ..\devices\inc\servo.h

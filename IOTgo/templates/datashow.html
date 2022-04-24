@@ -1,0 +1,291 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>IOT-go医院环境监测系统传感器数据显示</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<!-- //for-mobile-apps -->
+<!-- chart -->
+<script src="/static/js/Chart.js"></script>
+<!-- //chart -->
+<script type='text/javascript' src="/static/js/jquery-1.11.2.min.js"></script>
+<link href="/static/css/style5.css" rel="stylesheet" type="text/css" media="all" />
+<script src="/static/js/echarts.js"></script>
+<style>
+    table,table tr th, table tr td { border:2px solid #000000; }
+    table { width: 100%; min-height: 52px; line-height: 52px; text-align: center; border-collapse: collapse;}
+    .font{font-size:25px;font-family:"SimSun";}
+</style>
+
+</head>
+<body onload="rankshow();header();">
+	<!-- main -->
+
+        <h1 id="headshow" style="font-weight: bold;color:#6e3737;opacity: 0.6;"></h1>
+<div style="height:30px;">
+</div>
+  <center>
+    <div class="container">
+		<div class="appointment-w3" style="margin-bottom:10px;margin-up:50px;">
+			<div class="main_left">
+					<div id="main" style="width: 500px;height:400px;"></div>
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChart = echarts.init(document.getElementById('main'));
+
+                        // 指定图表的配置项和数据
+                        option = {
+                            title : {
+                                text: '近期数据显示',
+                                subtext: '数据由IOT-go提供'
+                            },
+                            tooltip : {
+                                trigger: 'axis'
+                            },
+                            legend: {
+                                data:['max']
+                            },
+                            toolbox: {
+                                show : true,
+                                feature : {
+                                    mark : {show: true},
+                                    dataView : {show: true, readOnly: false},
+                                    magicType : {show: true, type: ['line', 'bar']},
+                                    restore : {show: true},
+                                    saveAsImage : {show: true}
+                                }
+                            },
+                            calculable : true,
+                            xAxis : [
+                                {
+                                    type : 'category',
+                                    boundaryGap : false,
+                                    data : ['{{ time4 }}','{{ time3 }}','{{ time2 }}','{{ time1 }}','{{ time }}']
+                                }
+                            ],
+                            yAxis : [
+                                {
+                                    type : 'value',
+                                    axisLabel : {
+                                        formatter: '{value}'
+                                    }
+                                }
+                            ],
+                            series : [
+                                {
+                                    name:'历史数据',
+                                    type:'line',
+                                    data:['{{ data4 }}' ,'{{ data3 }}', '{{ data2 }}','{{ data1 }}','{{ data }}' ],
+                                    markPoint : {
+                                        data : [
+                                            {type : 'max', name: '最大值'},
+                                            {type : 'min', name: '最小值'}
+                                        ]
+                                    },
+                                    markLine : {
+                                        data : [
+                                            {type : 'average', name: '平均值'}
+                                        ]
+                                    }
+                                },
+
+                            ]
+                        };
+
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    </script>
+                 <div class="clear"> </div>
+			</div>
+
+            <div class="main_right">
+				<div class="diagram">
+					<canvas id="doughnut" height="180" width="180"></canvas>
+					<h4><font size="8">{{ data }}</font></h4>
+				</div>
+
+
+				<script>
+					var doughnutData = [
+							{
+								value: 100,
+								color:"#1abc9c",
+								highlight: "#1abc9c",
+							}
+						];
+
+					new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(doughnutData);
+
+
+					var sensorno={{ id }};
+					var sensorresult={{ data }};
+
+                    function rankshow(){
+					    var airrank="";
+					    if(sensorno==5){
+					        if(sensorresult<35){
+                                airrank="空气质量：优";
+                            }
+                            if(sensorresult>35&&sensorresult<75){
+					            airrank="空气质量：良";
+                            }
+                            if(sensorresult>75&&sensorresult<115){
+					            airrank="空气质量：轻度污染";
+                             }
+                             if(sensorresult>115&&sensorresult<150){
+					            airrank="空气质量：中度污染";
+                             }
+                             if(sensorresult>150&&sensorresult<250){
+					            airrank="空气质量：重度污染";
+                             }
+                             if(sensorresult>250){
+					            airrank="空气质量：严重污染";
+                             }
+                        }
+
+					    if(sensorno==10) {
+					        if(sensorresult<2240){
+                                airrank="紫外线强度：低";
+                            }
+                            if(sensorresult<4482&&sensorresult>2240){
+                                airrank="紫外线强度：正常";
+                            }
+                            if(sensorresult<5976&&sensorresult>4482){
+                                airrank="紫外线强度：高";
+                            }
+                            if(sensorresult<8216&&sensorresult>5976){
+                                airrank="紫外线强度：很高";
+                            }
+                            if(sensorresult>=8217){
+                                airrank="紫外线强度：极高";
+                            }
+                        }
+                        $("#airrank").html(airrank);
+                    }
+  					function header(){
+					    var headshow="";
+                        if(sensorno==1){
+                            headshow="人员在岗状态" ;
+                        }
+                        if(sensorno==2){
+                            headshow="二氧化碳浓度监测结果";
+                        }
+                        if(sensorno==3){
+                            headshow="室内温湿度监测结果";
+                        }
+                        if(sensorno==4){
+                            headshow=" 光照强度监测结果";
+                        }
+                        if(sensorno==5){
+                            headshow="室外PM2.5浓度监测结果";
+                        }
+                        if(sensorno==6){
+                            headshow="室外紫外线浓度监测结果";
+                        }
+                        $("#headshow").html(headshow);
+                    }
+				</script>
+                <div style="height:30px;"></div>
+                <div>
+                    <span id="airrank" style="color:lightseagreen;font-weight:bold;font-size: 20px;"></span>
+                </div>
+            </div>
+        <div class="wrap" style="width:230px">
+		<a href="/datashow/?id={{ id }}&roomnum={{ roomnumber }}" >
+            <input type="submit" value="刷新">
+        </a>
+   		</div>
+
+			<div class="clear"> </div>
+		</div>
+		</div>
+    </div>
+  </center>
+        <center>
+{#    <div class="container">#}
+{#    <div class="appointment-w3" style="margin-up:10px;">#}
+{#    <table class="font" id="tab"  border="1" style="margin:0px auto;">#}
+{#                    <tr>#}
+{#                        <th>时间</th>#}
+{#                        <th>数据</th>#}
+{#                    </tr>#}
+{#    </table>#}
+{#<script>#}
+{#    window.onload(#}
+{#    $.ajax({#}
+{#        url: 'datashow',#}
+{#        type: 'get',#}
+{#        datatype: 'json',#}
+{#        success: function (res) {#}
+{#            console.log(res);#}
+{#            //将数据显示在页面上#}
+{#            var str = "";#}
+{#            str += "<table><thead><tr><th>时间</th><th>传感器数据</th></thead><tbody>";#}
+{#            //遍历数据#}
+{#            $.each(res, function (index, element) {#}
+{#                str += "<tr><td>" + element['cur_time'] + "</td><td>" + element['data'] + "</td></tr>";#}
+{#            })#}
+{#//遍历完成之后#}
+{#            str += "</tbody></table>";#}
+{#//将表格添加到body中#}
+{#            $('body').append(str);#}
+{#        }#}
+{#    }));#}
+{# </script>#}
+{#  </div>#}
+{##}
+{#        <div class="clear"> </div>#}
+{#        </div>#}
+{#        </div>#}
+{#        </center>#}
+
+{#		<div class="wrap" style="width:230px">#}
+{#		<a href=”#” onClick="javascript :history.back(-1);">#}
+{#        <input type="submit" value="返回">#}
+{#        </a>#}
+{#   		</div>#}
+
+	<!-- //main -->
+    <script>
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+        });
+
+    </script>
+        </center>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.\oeswitch.o: ..\devices\src\oeSwitch.c
+.\oeswitch.o: ..\devices\inc\oeSwitch.h
+.\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\oeswitch.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\oeswitch.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\oeswitch.o: ..\user\stm32f10x_conf.h
+.\oeswitch.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\oeswitch.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\oeswitch.o: ..\hardware\inc\briupDelay.h
+.\oeswitch.o: ..\user\protocol.h
+.\oeswitch.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\oeswitch.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\oeswitch.o: ..\devices\inc\alarm.h

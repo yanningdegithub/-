@@ -1,0 +1,156 @@
+Dependencies for Project 'IotSmartHome', Target 'SmartHome': (DO NOT MODIFY !)
+F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x4D783CD2)(--cpu Cortex-M3 -g --apcs=interwork -I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\startup_stm32f10x_md.o --depend .\startup_stm32f10x_md.d)
+F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x4D783CB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\system_stm32f10x.o --omf_browse .\system_stm32f10x.crf --depend .\system_stm32f10x.d)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\core_cm3.o --omf_browse .\core_cm3.crf --depend .\core_cm3.d)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+F (..\devices\src\basePeripheral.c)(0x5B458044)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\baseperipheral.o --omf_browse .\baseperipheral.crf --depend .\baseperipheral.d)
+I (..\devices\inc\basePeripheral.h)(0x5B457F5C)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\devices\src\infrared.c)(0x5B575D6E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\infrared.o --omf_browse .\infrared.crf --depend .\infrared.d)
+I (..\devices\inc\infrared.h)(0x5B49982B)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+I (..\user\protocol.h)(0x5B575D3F)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+F (..\devices\src\methane.c)(0x5B575D3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\methane.o --omf_browse .\methane.crf --depend .\methane.d)
+I (..\devices\inc\methane.h)(0x5B49B7C1)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+I (..\user\protocol.h)(0x5B575D3F)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+F (..\devices\src\smoke.c)(0x5B56CC8E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\smoke.o --omf_browse .\smoke.crf --depend .\smoke.d)
+I (..\devices\inc\smoke.h)(0x5B51A3BF)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+F (..\devices\src\fire.c)(0x5B575D3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\fire.o --omf_browse .\fire.crf --depend .\fire.d)
+I (..\devices\inc\fire.h)(0x5B51A3CB)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+I (..\user\protocol.h)(0x5B575D3F)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+F (..\hardware\src\briupDelay.c)(0x5B53E989)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briupdelay.o --omf_browse .\briupdelay.crf --depend .\briupdelay.d)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\hardware\src\briupUsart.c)(0x5B4C4F3C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briupusart.o --omf_browse .\briupusart.crf --depend .\briupusart.d)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\hardware\src\briupUsart3.c)(0x5B446AF6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briupusart3.o --omf_browse .\briupusart3.crf --depend .\briupusart3.d)
+I (..\hardware\inc\briupUsart3.h)(0x5B446913)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\hardware\src\briupZigbee.c)(0x5B4C5357)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briupzigbee.o --omf_browse .\briupzigbee.crf --depend .\briupzigbee.d)
+I (..\hardware\inc\briupZigbee.h)(0x5B4B015B)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\hardware\src\briupGPIO.c)(0x5B457FA8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briupgpio.o --omf_browse .\briupgpio.crf --depend .\briupgpio.d)
+I (..\hardware\inc\briupGPIO.h)(0x5B4578EA)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\hardware\src\briupTim.c)(0x5B3F2F55)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\briuptim.o --omf_browse .\briuptim.crf --depend .\briuptim.d)
+I (..\hardware\inc\briupTim.h)(0x5B3F290E)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\misc.o --omf_browse .\misc.crf --depend .\misc.d)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+F (..\user\main.c)(0x5B559BC6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (..\hardware\inc\briupDelay.h)(0x5B46AF07)
+I (..\hardware\inc\briupTim.h)(0x5B3F290E)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)
+I (..\hardware\inc\briupZigbee.h)(0x5B4B015B)
+I (..\hardware\inc\briupUsart3.h)(0x5B446913)
+I (..\hardware\inc\briupGPIO.h)(0x5B4578EA)
+I (..\devices\inc\basePeripheral.h)(0x5B457F5C)
+I (..\devices\inc\infrared.h)(0x5B49982B)
+I (..\devices\inc\methane.h)(0x5B49B7C1)
+I (..\devices\inc\smoke.h)(0x5B51A3BF)
+I (..\devices\inc\fire.h)(0x5B51A3CB)
+I (..\user\protocol.h)(0x5B575D3F)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+F (..\user\protocol.c)(0x5B575D3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\user -I..\devices\inc -I..\hardware\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x-I D:\mdkWorkspace\csuIotSmartHomeYhx\Board3\project\RTE-I D:\Internship\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Internship\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\protocol.o --omf_browse .\protocol.crf --depend .\protocol.d)
+I (..\user\protocol.h)(0x5B575D3F)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4D783CAA)
+I (..\user\stm32f10x_conf.h)(0x5B455D32)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (D:\Internship\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (..\hardware\inc\briupZigbee.h)(0x5B4B015B)
+I (..\hardware\inc\briupUsart.h)(0x5B494502)

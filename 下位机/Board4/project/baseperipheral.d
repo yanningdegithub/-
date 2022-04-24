@@ -1,0 +1,9 @@
+.\baseperipheral.o: ..\devices\src\basePeripheral.c
+.\baseperipheral.o: ..\devices\inc\basePeripheral.h
+.\baseperipheral.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\baseperipheral.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\baseperipheral.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\baseperipheral.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\baseperipheral.o: ..\user\stm32f10x_conf.h
+.\baseperipheral.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\baseperipheral.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

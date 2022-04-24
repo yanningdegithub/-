@@ -1,0 +1,11 @@
+.\smoke.o: ..\devices\src\smoke.c
+.\smoke.o: ..\devices\inc\smoke.h
+.\smoke.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\smoke.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\smoke.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\smoke.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\smoke.o: ..\user\stm32f10x_conf.h
+.\smoke.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\smoke.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\smoke.o: ..\hardware\inc\briupDelay.h
+.\smoke.o: ..\hardware\inc\briupUsart.h

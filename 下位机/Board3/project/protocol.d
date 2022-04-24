@@ -1,0 +1,13 @@
+.\protocol.o: ..\user\protocol.c
+.\protocol.o: ..\user\protocol.h
+.\protocol.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\protocol.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\protocol.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\protocol.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\protocol.o: ..\user\stm32f10x_conf.h
+.\protocol.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\protocol.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\protocol.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\protocol.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\protocol.o: ..\hardware\inc\briupZigbee.h
+.\protocol.o: ..\hardware\inc\briupUsart.h

@@ -1,0 +1,11 @@
+.\infrared.o: ..\devices\src\infrared.c
+.\infrared.o: ..\devices\inc\infrared.h
+.\infrared.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\infrared.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\infrared.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\infrared.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\infrared.o: ..\user\stm32f10x_conf.h
+.\infrared.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\infrared.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\infrared.o: ..\hardware\inc\briupDelay.h
+.\infrared.o: ..\hardware\inc\briupUsart.h

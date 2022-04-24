@@ -1,0 +1,9 @@
+.\usart3.o: ..\hardware\src\usart3.c
+.\usart3.o: ..\hardware\inc\usart3.h
+.\usart3.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\usart3.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\usart3.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\usart3.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\usart3.o: ..\user\stm32f10x_conf.h
+.\usart3.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\usart3.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

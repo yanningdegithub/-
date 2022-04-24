@@ -1,0 +1,14 @@
+.\fire.o: ..\devices\src\fire.c
+.\fire.o: ..\devices\inc\fire.h
+.\fire.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\fire.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\fire.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\fire.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\fire.o: ..\user\stm32f10x_conf.h
+.\fire.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\fire.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\fire.o: ..\hardware\inc\briupDelay.h
+.\fire.o: ..\hardware\inc\briupUsart.h
+.\fire.o: ..\user\protocol.h
+.\fire.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\fire.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

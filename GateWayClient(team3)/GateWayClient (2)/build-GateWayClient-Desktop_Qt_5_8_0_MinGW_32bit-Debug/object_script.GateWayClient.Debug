@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\mnetwork.o
+./debug\mserialport.o
+./debug\netprotocol.o
+./debug\serialprotocol.o
+./debug\raspiclient.o
+./debug\dataqueue.o
+./debug\moc_mnetwork.o
+./debug\moc_mserialport.o
+./debug\moc_netprotocol.o
+./debug\moc_raspiclient.o
+);

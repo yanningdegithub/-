@@ -1,0 +1,11 @@
+.\keyboard.o: ..\devices\src\keyboard.c
+.\keyboard.o: ..\devices\inc\keyboard.h
+.\keyboard.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\keyboard.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\keyboard.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\keyboard.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\keyboard.o: ..\user\stm32f10x_conf.h
+.\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\keyboard.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\keyboard.o: ..\hardware\inc\briupDelay.h
+.\keyboard.o: ..\hardware\inc\briupUsart.h

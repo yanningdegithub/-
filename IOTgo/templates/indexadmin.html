@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IOT-go环境监测系统</title>
+    <!-- load CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="/static/fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" type="text/css" href="/static/slick/slick.css"/>                       <!-- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="/static/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/static/css/tooplate-style.css">
+    <link rel="stylesheet" href="/static/css/style1.css" media="screen" type="text/css" />
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+</head>
+
+<body onload="fun()">
+    <div id="tm-bg"></div>
+    <div id="tm-wrap">
+        <div class="tm-main-content">
+          <div class="div1">
+             <form action="#" method="post">
+                 <div>
+                     <center><font color="#808080" size="6">用户信息</font></center>
+                     <div ><font color="#808080">用户账号：{{ username }}
+                     </font></div>
+                     <div id="test"></div>
+                     <div><font color="#808080">用户房间号：{{ roomnumber }}</font></div>
+                     </div>
+             </form>
+          </div>
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                        <div class="tm-site-header">
+                            <h1 class="mb-4">IOT-go 智 能 医 院 环境监测系统</h1>
+                            <img src="/static/img/underline.png" class="img-fluid mb-4">
+                            <p>IOT-go为您提供优质医院智能环境监测服务Simple & Safe Life</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="content">
+                            <div class="grid">
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-cloud fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">环境信息</span>
+
+                                            <div class="product__bg"></div>
+                                        </div>
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">查看环境信息</h2>
+
+                                                    </div>
+                                                </div>
+                                                    <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="p-sm-4 p-2 tm-img-container">
+                                                            <div class="tm-img-slider" id="tmImgSlider">
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashowsingle/?id=1&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-user-times fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">人员在岗状态</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=2&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-ban fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">室内二氧化碳浓度</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=3&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-thermometer-three-quarters fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">室内温湿度</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=4&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-certificate fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">室内光照强度</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=5&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-cloud fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">室外PM2.5指数</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+{#                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=6&roomnum={{ roomnumber }}">#}
+{#                                                              	<br/><br/>#}
+{#					                                            <i class="fas fa-flask fa-3x tm-nav-icon"></i>#}
+{#                                                                  <span class="tm-nav-text">甲烷监测</span>#}
+{#					                                            <div class="product__bg"></div>#}
+{#                                                              </a>#}
+{#                                                              </div>#}
+{#                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashowsingle/?id=7&roomnum={{ roomnumber }}">#}
+{#                                                              	<br/><br/>#}
+{#					                                            <i class="fas fa-tint fa-3x tm-nav-icon"></i>#}
+{#                                                                  <span class="tm-nav-text">烟雾监测</span>#}
+{#					                                            <div class="product__bg"></div>#}
+{#                                                              </a>#}
+{#                                                              </div>#}
+{#                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashowsingle/?id=8&roomnum={{ roomnumber }}">#}
+{#                                                              	<br/><br/>#}
+{#					                                            <i class="fas fa-fire fa-3x tm-nav-icon"></i>#}
+{#                                                                  <span class="tm-nav-text">火灾监测</span>#}
+{#					                                            <div class="product__bg"></div>#}
+{#                                                              </a>#}
+{#                                                              </div>#}
+                                                              <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/datashow/?id=10&roomnum={{ roomnumber }}">
+                                                              	<br/><br/>
+					                                            <i class="fas fa-rss-square fa-3x tm-nav-icon"></i>
+                                                                  <span class="tm-nav-text">室外紫外线指数</span>
+					                                            <div class="product__bg"></div>
+                                                              </a>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                                <div style="position:static;right:0;bottom:0">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                        <a style=" text-decoration: none; color: #FFFFFF;" href="/control/?roomnum={{ roomnumber }}">
+                                            <i class="fas fa-cog fa-3x tm-nav-icon"></i>
+                                                <span class="tm-nav-text">控制器</span>
+                                            <div class="product__bg"></div>
+                                        </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="grid__item" id="team-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-history fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">警告信息</span>
+                                            <div class="product__bg"></div>
+                                        </div>
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">环境监测异常信息提示</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row tm-reverse-sm">
+                                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                                        <div id="data1">{{ tishi0 }}</div>
+                                                        <div id="data2">{{ tishi1 }}</div>
+                                                        <div id="data3">{{ tishi2 }}</div>
+                                                        <div id="data4">{{ tishi3 }}</div>
+                                                        <div id="data5">{{ tishi4 }}</div>
+
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
+                                                        <img src="/static/img/team.jpg" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+
+
+
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                                <div style="position:static;right:0;bottom:0">
+                                    <div class="product">
+                                        <div class="tm-nav-link"><a style=" text-decoration: none; color: #FFFFFF;" href="/roomcontral/">
+                                            <i class="fas fa-arrow-circle-left fa-3x tm-nav-icon"></i>
+                                                       <span class="tm-nav-text">返回</span>
+
+                                            <div class="product__bg"></div>
+                                        </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <footer>
+                <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2018</span> IOT-go </p>
+            </footer>
+        </div> <!-- .tm-main-content -->
+    </div>
+    <!-- load JS -->
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->
+    <script src="/static/slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="/static/js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
+    <script src="/static/js/main.js"></script>
+    <script>
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+        });
+             function fun(){
+               $.ajax({
+                  type:"POST",
+                      url: "/control/",//请求的url，问号后面是所带的参数；
+                      dataType:'json',
+                      async:false,
+                      success:function(data){
+
+                    data1 = eval(data.root);//必须通过eval函数才能解析成json数据，否则会报错
+                    data2 = eval(data.root);
+                    data3 = eval(data.root);
+                    data4 = eval(data.root);
+                    data5 = eval(data.root);
+                    $("#data1").html(html); //在html页面id=#data1的标签里显示html内容
+                    $("#data2").html(html);
+                    $("#data3").html(html);
+                    $("#data4").html(html);
+                    $("#data5").html(html);
+                    }
+
+              });
+           }
+    </script>
+    </div>
+</body>
+</html>

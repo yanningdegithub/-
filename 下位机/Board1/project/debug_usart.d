@@ -1,0 +1,9 @@
+.\debug_usart.o: ..\hardware\src\Debug_usart.c
+.\debug_usart.o: ..\hardware\inc\Debug_usart.h
+.\debug_usart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\debug_usart.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\debug_usart.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\debug_usart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\debug_usart.o: ..\user\stm32f10x_conf.h
+.\debug_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\debug_usart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

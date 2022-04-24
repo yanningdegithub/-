@@ -1,0 +1,162 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+		<title>IOT-go医院环境监测系统</title>
+		<link href="/static/css/style8.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="/static/js/move-top.js"></script>
+		<script type="text/javascript" src="/static/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<scrip src="bootstrap/js/jquery-1.6.3.min.js"></scrip>
+		<scrip src="bootstrap/js/jquery-1.11.2.min.js"></scrip>
+		<scrip src="bootstrap/js/jquery-3.2.1.slim.min.js"></scrip>
+		<scrip src="bootstrap/js/bootstrap.min.js"></scrip>
+		<style type="text/css">
+			#frame {/*----------图片轮播相框容器----------*/
+		
+			position:absolute;
+			width: 600px;
+			height: 400px;
+			overflow: hidden;/*--相框作用，只显示一个图片---*/
+			border-radius:5px;
+			}
+			#dis {/*--绝对定位方便li图片简介的自动分布定位---*/
+			position:absolute;
+			left: -50px;
+			top: -10px;
+			opacity: 0.5;
+			}
+			#dis li {
+			display: inline-block;
+			width: 200px;
+			height: 60px;
+			margin: 0 50px;
+			float: left;
+			text-align: center;
+			color: #fff;
+			border-radius: 0px;
+			background: #000;
+			}
+			#photos img {
+			float: left;
+			width:600px;
+			height:400px;
+			}
+			#photos {/*---设置总的图片宽度--通过位移来达到轮播效果----*/
+			position:absolute;z-index:9px;
+			width: calc(600px * 5);/*---修改图片数量的话需要修改下面的动画参数*/
+			}
+			.play{
+			animation: ma 20s ease-out infinite alternate;/**/
+			}
+			@keyframes ma {/*---每图片切换有两个阶段：位移切换和静置。中间的效果可以任意定制----*/
+			0%,20% {    margin-left: 0px;    }
+			25%,40% {    margin-left: -600px;    }
+			45%,60% {    margin-left: -1200px;    }
+			65%,80% {    margin-left: -1800px;    }
+			85%,100% {    margin-left: -2400px;    }
+			}
+			.num{
+			position:absolute;z-index:10;
+			display:inline-block;
+			right:10px;top:165px;
+			border-radius:100%;
+			background:#f00;
+			width:25px;height:25px;
+			line-height:25px;
+			cursor:pointer;
+			color:#fff;
+			text-align:center;
+			opacity:0.8;
+			}
+			.num:hover{background:#00f;}
+			.num:hover,#photos:hover{animation-play-state:paused;}
+			.num:nth-child(2){margin-right:30px}
+			.num:nth-child(3){margin-right:60px}
+			.num:nth-child(4){margin-right:90px}
+			.num:nth-child(5){margin-right:120px}
+			#a1:hover ~ #photos{animation: ma0 .5s ease-out forwards;}
+			#a2:hover ~ #photos{animation: ma1s ease-out forwards;}
+			#a3:hover ~ #photos{animation: ma1 .5s ease-out forwards;}
+			#a4:hover ~ #photos{animation: ma2s ease-out forwards;}
+			#a5:hover ~ #photos {animation: ma2 .5s ease-out forwards;}
+			@keyframes ma1 {0%{margin-left:-1200px;}100%{margin-left:-0px;}    }
+			@keyframes ma2 {0%{margin-left:-1200px;}100%{margin-left:-300px;}    }
+			@keyframes ma3 {100%{margin-left:-600px;}    }
+			@keyframes ma4 {100%{margin-left:-900px;}    }
+			@keyframes ma5 {100%{margin-left:-1200px;}    }
+			</style>
+</head>
+	
+<body>
+<!-- banner -->
+	<div class="banner">
+	<div class="container" c>
+		<div class="navi"></div>
+			<div style="height:800px;width:600px;float:left;">
+			<div class="head-logo">
+				<div class="logo">
+					<a href="/login/"><font style="font-family:STZhongsong">登陆注册</font></a>
+				</div>
+				<div class="head-logo-right-icons">
+					<div class="head-logo-right">
+							<div class="fig">
+							</div>
+							<ul>								
+								<li><a href="#" class="mes"> </a></li>
+								<li><a href="#">使用说明</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="banner-info">
+				<h3>Welcome to <span>IOT-go</span> <span>environment</span><span>monitor</span></h3>
+				<p class="para">欢迎来到IOT-go<span>医院环境监测中心</span></p>
+			</div>
+			</div>
+
+			<div style="float:left;">	
+			<div style="height:200px;width:300px;"></div>	
+			<div id="frame">
+			<div id="photos" class="play">
+			  <img src="/static/img/1.jpg" >
+			  <img src="/static/img/2.jpg" >
+			  <img src="/static/img/3.jpg" >
+			  <img src="/static/img/4.jpg" >
+			  <img src="/static/img/5.jpg" >
+			</div>
+			</div>	
+			</div>			
+	</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+<!--  -->
+
+</body>
+</html>

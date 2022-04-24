@@ -1,0 +1,14 @@
+.\methane.o: ..\devices\src\methane.c
+.\methane.o: ..\devices\inc\methane.h
+.\methane.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\methane.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\methane.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\methane.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\methane.o: ..\user\stm32f10x_conf.h
+.\methane.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\methane.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\methane.o: ..\hardware\inc\briupDelay.h
+.\methane.o: ..\hardware\inc\briupUsart.h
+.\methane.o: ..\user\protocol.h
+.\methane.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\methane.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -1,0 +1,10 @@
+.\bh1750.o: ..\devices\src\BH1750.c
+.\bh1750.o: ..\devices\inc\BH1750.h
+.\bh1750.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\bh1750.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\bh1750.o: D:\Internship\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\bh1750.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\bh1750.o: ..\user\stm32f10x_conf.h
+.\bh1750.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\bh1750.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\bh1750.o: ..\hardware\inc\briupI2C.h

@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+".\startup_stm32f10x_md.o"
+".\system_stm32f10x.o"
+".\core_cm3.o"
+".\baseperipheral.o"
+".\sht20.o"
+".\veml6070.o"
+".\bh1750.o"
+".\co2.o"
+".\briupdelay.o"
+".\briupusart.o"
+".\briupzigbee.o"
+".\briupgpio.o"
+".\briupi2c.o"
+".\briupusart3.o"
+".\misc.o"
+".\main.o"
+".\protocol.o"
+--strict --scatter ".\IotSmartHome.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\IotSmartHome.map" -o .\IotSmartHome.axf
